@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NeuroLearn - Explore Courses</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard-page">
+  <main class="dashboard-main">
+    <div class="container dashboard-stack">
+      <header class="dashboard-top">
+        <div>
+          <h1 class="dashboard-title">Explore Courses</h1>
+          <p class="section-lead">Discover AI & ML courses</p>
+        </div>
+      </header>
+
+      <section class="courses-search" aria-label="Search courses">
+        <label class="sr-only" for="course-search">Search courses</label>
+        <div class="search-field">
+          <input id="course-search" type="search" placeholder="Search courses..." />
+          <button class="filter-button" type="button" aria-label="Open filters">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M4 6h16v2H4V6Zm3 5h10v2H7v-2Zm4 5h2v2h-2v-2Z" fill="currentColor"/>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="chip-row" aria-label="Course categories">
+        <button class="chip is-active" type="button">All</button>
+        <button class="chip" type="button">ML</button>
+        <button class="chip" type="button">DL</button>
+        <button class="chip" type="button">NLP</button>
+        <button class="chip" type="button">CV</button>
+      </section>
+
+      <section class="course-list" aria-label="Courses">
+        <a class="course-item card course-link" href="course-details.html" aria-label="Open Neural Networks Fundamentals">
+          <div class="course-item-left">
+            <span class="icon-tile violet" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M7 6a5 5 0 0 1 10 0v5a5 5 0 1 1-10 0V6Zm2 5a3 3 0 0 0 6 0V6a3 3 0 1 0-6 0v5Z" fill="currentColor"/>
+              </svg>
+            </span>
+          </div>
+          <div class="course-item-body">
+            <div class="course-item-head">
+              <h3>Neural Networks Fundamentals</h3>
+              <span class="rating">★ 4.8</span>
+            </div>
+            <p class="muted">Deep Learning</p>
+            <div class="course-meta">
+              <span>8h 30m</span>
+              <span>24 lessons</span>
+              <span class="pill">Intermediate</span>
+            </div>
+          </div>
+        </a>
+
+        <article class="course-item card">
+          <div class="course-item-left">
+            <span class="icon-tile green" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M6 6h12v9H7.5L6 17.5V6Zm2 2v5h8V8H8Z" fill="currentColor"/>
+              </svg>
+            </span>
+          </div>
+          <div class="course-item-body">
+            <div class="course-item-head">
+              <h3>NLP with Transformers</h3>
+              <span class="rating">★ 4.9</span>
+            </div>
+            <p class="muted">Natural Language</p>
+            <div class="course-meta">
+              <span>12h 15m</span>
+              <span>32 lessons</span>
+              <span class="pill">Advanced</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="course-item card">
+          <div class="course-item-left">
+            <span class="icon-tile orange" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M12 5c4.4 0 7.6 3 8.6 6-1 3-4.2 6-8.6 6s-7.6-3-8.6-6C4.4 8 7.6 5 12 5Zm0 2c-3.2 0-5.7 2.1-6.6 4 1 1.9 3.4 4 6.6 4s5.7-2.1 6.6-4c-1-1.9-3.4-4-6.6-4Zm0 2.2A1.8 1.8 0 1 1 12 13a1.8 1.8 0 0 1 0-3.6Z" fill="currentColor"/>
+              </svg>
+            </span>
+          </div>
+          <div class="course-item-body">
+            <div class="course-item-head">
+              <h3>Computer Vision Essentials</h3>
+              <span class="rating">★ 4.7</span>
+            </div>
+            <p class="muted">Computer Vision</p>
+            <div class="course-meta">
+              <span>10h</span>
+              <span>28 lessons</span>
+              <span class="pill">Beginner</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="course-item card">
+          <div class="course-item-left">
+            <span class="icon-tile blue" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M8 5h8v4H8V5Zm-4 10h6v4H4v-4Zm10 0h6v4h-6v-4ZM6 9h2v6H6V9Zm10 0h2v6h-2V9Z" fill="currentColor"/>
+              </svg>
+            </span>
+          </div>
+          <div class="course-item-body">
+            <div class="course-item-head">
+              <h3>Machine Learning A-Z</h3>
+              <span class="rating">★ 4.9</span>
+            </div>
+            <p class="muted">Machine Learning</p>
+            <div class="course-meta">
+              <span>15h 45m</span>
+              <span>42 lessons</span>
+              <span class="pill">Beginner</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="course-item card">
+          <div class="course-item-left">
+            <span class="icon-tile violet" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M7 6a5 5 0 0 1 10 0v5a5 5 0 1 1-10 0V6Zm2 5a3 3 0 0 0 6 0V6a3 3 0 1 0-6 0v5Z" fill="currentColor"/>
+              </svg>
+            </span>
+          </div>
+          <div class="course-item-body">
+            <div class="course-item-head">
+              <h3>Advanced CNNs</h3>
+              <span class="rating">★ 4.6</span>
+            </div>
+            <p class="muted">Deep Learning</p>
+            <div class="course-meta">
+              <span>6h 20m</span>
+              <span>18 lessons</span>
+              <span class="pill">Advanced</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="course-item card">
+          <div class="course-item-left">
+            <span class="icon-tile green" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M6 6h12v9H7.5L6 17.5V6Zm2 2v5h8V8H8Z" fill="currentColor"/>
+              </svg>
+            </span>
+          </div>
+          <div class="course-item-body">
+            <div class="course-item-head">
+              <h3>Sentiment Analysis</h3>
+              <span class="rating">★ 4.8</span>
+            </div>
+            <p class="muted">Natural Language</p>
+            <div class="course-meta">
+              <span>9h 10m</span>
+              <span>26 lessons</span>
+              <span class="pill">Intermediate</span>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Primary">
+    <a class="bottom-link" href="dashboard.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M4 11.5 12 5l8 6.5V20h-5.5v-5H9.5v5H4v-8.5Z" fill="currentColor"/>
+      </svg>
+      Home
+    </a>
+    <a class="bottom-link is-active" href="courses.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M5 6h14v2H5V6Zm0 5h14v2H5v-2Zm0 5h14v2H5v-2Z" fill="currentColor"/>
+      </svg>
+      Courses
+    </a>
+    <a class="bottom-link" href="quiz.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 4a8 8 0 1 0 8 8 8 8 0 0 0-8-8Zm0 12.2a1.2 1.2 0 1 1 1.2-1.2 1.2 1.2 0 0 1-1.2 1.2Zm1.4-5.4-.8.5v1.1h-1.4V10l1.6-1a1.2 1.2 0 1 0-1.8-1l-1.2-.6a2.6 2.6 0 1 1 3.6 3.4Z" fill="currentColor"/>
+      </svg>
+      Quiz
+    </a>
+    <a class="bottom-link" href="profile.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5Z" fill="currentColor"/>
+      </svg>
+      Profile
+    </a>
+  </nav>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NeuroLearn - Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard-page">
+  <main class="dashboard-main">
+    <div class="container dashboard-stack">
+      <header class="dashboard-top">
+        <div>
+          <p class="eyebrow">Welcome back,</p>
+          <h1 class="dashboard-title">Alex Johnson</h1>
+        </div>
+        <button class="icon-button" type="button" aria-label="Open settings">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 8.7a3.3 3.3 0 1 0 0 6.6 3.3 3.3 0 0 0 0-6.6Zm9.2 3.3c0-.5-.1-1-.2-1.4l2-1.5-1.8-3.1-2.4 1a7.7 7.7 0 0 0-2.4-1.4l-.4-2.6H9l-.4 2.6c-.9.3-1.7.8-2.4 1.4l-2.4-1-1.8 3.1 2 1.5c-.1.5-.2 1-.2 1.4s.1 1 .2 1.4l-2 1.5 1.8 3.1 2.4-1c.7.6 1.5 1.1 2.4 1.4L9 21h6l.4-2.6c.9-.3 1.7-.8 2.4-1.4l2.4 1 1.8-3.1-2-1.5c.1-.5.2-1 .2-1.4Z" fill="currentColor"/>
+          </svg>
+        </button>
+      </header>
+
+      <section class="progress-card card" aria-label="Weekly progress">
+        <div class="progress-head">
+          <p class="section-lead">Your Progress</p>
+          <span class="icon-pill" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M5 17h3.5l3-4 3 3 4.5-6V7l-4.5 6-3-3-3 4H5v3Z" fill="currentColor"/>
+            </svg>
+          </span>
+        </div>
+        <p class="progress-value">156 / 240 <span>Hours</span></p>
+        <div class="progress-meta">
+          <span>65% Complete</span>
+          <span class="accent">+12% this week</span>
+        </div>
+        <div class="progress-bar" role="presentation">
+          <span style="width: 65%"></span>
+        </div>
+      </section>
+
+      <section class="dashboard-section" aria-labelledby="categories-title">
+        <div class="section-header">
+          <h2 id="categories-title">Categories</h2>
+          <a class="muted-link" href="index.html">See all</a>
+        </div>
+        <div class="category-grid">
+          <a class="category-card card" href="course-details.html">
+            <span class="icon-tile blue" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M8 5h8v4H8V5Zm-4 10h6v4H4v-4Zm10 0h6v4h-6v-4ZM6 9h2v6H6V9Zm10 0h2v6h-2V9Z" fill="currentColor"/>
+              </svg>
+            </span>
+            <h3>Machine Learning</h3>
+            <p class="muted">24 courses</p>
+          </a>
+          <a class="category-card card" href="course-details.html">
+            <span class="icon-tile violet" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M7 6a5 5 0 0 1 10 0v5a5 5 0 1 1-10 0V6Zm2 5a3 3 0 0 0 6 0V6a3 3 0 1 0-6 0v5Z" fill="currentColor"/>
+              </svg>
+            </span>
+            <h3>Deep Learning</h3>
+            <p class="muted">18 courses</p>
+          </a>
+          <a class="category-card card" href="course-details.html">
+            <span class="icon-tile green" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M6 6h12v9H7.5L6 17.5V6Zm2 2v5h8V8H8Z" fill="currentColor"/>
+              </svg>
+            </span>
+            <h3>Natural Language</h3>
+            <p class="muted">16 courses</p>
+          </a>
+          <a class="category-card card" href="course-details.html">
+            <span class="icon-tile orange" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M12 5c4.4 0 7.6 3 8.6 6-1 3-4.2 6-8.6 6s-7.6-3-8.6-6C4.4 8 7.6 5 12 5Zm0 2c-3.2 0-5.7 2.1-6.6 4 1 1.9 3.4 4 6.6 4s5.7-2.1 6.6-4c-1-1.9-3.4-4-6.6-4Zm0 2.2A1.8 1.8 0 1 1 12 13a1.8 1.8 0 0 1 0-3.6Z" fill="currentColor"/>
+              </svg>
+            </span>
+            <h3>Computer Vision</h3>
+            <p class="muted">20 courses</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="dashboard-section" aria-labelledby="continue-title">
+        <h2 id="continue-title">Continue Learning</h2>
+        <div class="course-stack">
+          <article class="course-card card">
+            <div class="course-head">
+              <div>
+                <h3>Neural Networks Fundamentals</h3>
+                <p class="muted">Deep Learning</p>
+              </div>
+              <button class="play-button" type="button" aria-label="Play Neural Networks Fundamentals">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M8 6.5v11l9-5.5-9-5.5Z" fill="currentColor"/>
+                </svg>
+              </button>
+            </div>
+            <div class="course-meta">
+              <span>8h 30m</span>
+              <span>24 lessons</span>
+            </div>
+            <div class="progress-bar" role="presentation">
+              <span style="width: 65%"></span>
+            </div>
+            <p class="muted">65% complete</p>
+          </article>
+
+          <article class="course-card card">
+            <div class="course-head">
+              <div>
+                <h3>NLP with Transformers</h3>
+                <p class="muted">Natural Language</p>
+              </div>
+              <button class="play-button" type="button" aria-label="Play NLP with Transformers">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M8 6.5v11l9-5.5-9-5.5Z" fill="currentColor"/>
+                </svg>
+              </button>
+            </div>
+            <div class="course-meta">
+              <span>12h 15m</span>
+              <span>32 lessons</span>
+            </div>
+            <div class="progress-bar" role="presentation">
+              <span style="width: 30%"></span>
+            </div>
+            <p class="muted">30% complete</p>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Primary">
+    <a class="bottom-link is-active" href="dashboard.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M4 11.5 12 5l8 6.5V20h-5.5v-5H9.5v5H4v-8.5Z" fill="currentColor"/>
+      </svg>
+      Home
+    </a>
+    <a class="bottom-link" href="courses.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M5 6h14v2H5V6Zm0 5h14v2H5v-2Zm0 5h14v2H5v-2Z" fill="currentColor"/>
+      </svg>
+      Courses
+    </a>
+    <a class="bottom-link" href="quiz.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 4a8 8 0 1 0 8 8 8 8 0 0 0-8-8Zm0 12.2a1.2 1.2 0 1 1 1.2-1.2 1.2 1.2 0 0 1-1.2 1.2Zm1.4-5.4-.8.5v1.1h-1.4V10l1.6-1a1.2 1.2 0 1 0-1.8-1l-1.2-.6a2.6 2.6 0 1 1 3.6 3.4Z" fill="currentColor"/>
+      </svg>
+      Quiz
+    </a>
+    <a class="bottom-link" href="profile.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5Z" fill="currentColor"/>
+      </svg>
+      Profile
+    </a>
+  </nav>
+</body>
+</html>

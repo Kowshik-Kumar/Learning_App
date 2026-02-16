@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NeuroLearn - Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard-page">
+  <main class="dashboard-main" data-quiz-page>
+    <div class="container dashboard-stack" data-quiz>
+      <header class="quiz-header">
+        <a class="icon-button" href="courses.html" aria-label="Back to courses">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M15.5 6 9 12l6.5 6-1.4 1.4L6.2 12l7.9-7.4L15.5 6Z" fill="currentColor"/>
+          </svg>
+        </a>
+        <div class="quiz-meta">
+          <span data-quiz-count>Question 1 of 5</span>
+          <span class="accent" data-quiz-percent>20%</span>
+        </div>
+      </header>
+
+      <div class="quiz-timer">
+        <span class="timer-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <path d="M9 2h6v2H9V2Zm3 4a8 8 0 1 0 8 8 8 8 0 0 0-8-8Zm0 2a6 6 0 1 1-6 6 6 6 0 0 1 6-6Zm.8 1.5h-1.6v5l4.2 2.5.8-1.4-3.4-2V9.5Z" fill="currentColor"/>
+          </svg>
+        </span>
+        <span>10:00</span>
+      </div>
+
+      <div class="progress-bar" role="presentation">
+        <span data-quiz-progress style="width: 20%"></span>
+      </div>
+
+      <section class="quiz-card card" aria-labelledby="quiz-question">
+        <h1 id="quiz-question" data-quiz-question>What is the primary function of an activation function in a neural network?</h1>
+      </section>
+
+      <section class="quiz-options-list" aria-label="Answer options" data-quiz-options>
+        <label class="quiz-option-card card">
+          <input type="radio" name="quiz" />
+          <span class="quiz-option-text">To initialize weights</span>
+        </label>
+        <label class="quiz-option-card card">
+          <input type="radio" name="quiz" />
+          <span class="quiz-option-text">To introduce non-linearity</span>
+        </label>
+        <label class="quiz-option-card card">
+          <input type="radio" name="quiz" />
+          <span class="quiz-option-text">To calculate loss</span>
+        </label>
+        <label class="quiz-option-card card">
+          <input type="radio" name="quiz" />
+          <span class="quiz-option-text">To update gradients</span>
+        </label>
+      </section>
+
+      <button class="btn btn-primary quiz-next" type="button" data-quiz-next>Next</button>
+    </div>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Primary">
+    <a class="bottom-link" href="dashboard.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M4 11.5 12 5l8 6.5V20h-5.5v-5H9.5v5H4v-8.5Z" fill="currentColor"/>
+      </svg>
+      Home
+    </a>
+    <a class="bottom-link" href="courses.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M5 6h14v2H5V6Zm0 5h14v2H5v-2Zm0 5h14v2H5v-2Z" fill="currentColor"/>
+      </svg>
+      Courses
+    </a>
+    <a class="bottom-link is-active" href="quiz.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 4a8 8 0 1 0 8 8 8 8 0 0 0-8-8Zm0 12.2a1.2 1.2 0 1 1 1.2-1.2 1.2 1.2 0 0 1-1.2 1.2Zm1.4-5.4-.8.5v1.1h-1.4V10l1.6-1a1.2 1.2 0 1 0-1.8-1l-1.2-.6a2.6 2.6 0 1 1 3.6 3.4Z" fill="currentColor"/>
+      </svg>
+      Quiz
+    </a>
+    <a class="bottom-link" href="profile.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5Z" fill="currentColor"/>
+      </svg>
+      Profile
+    </a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
